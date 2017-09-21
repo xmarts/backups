@@ -20,4 +20,9 @@ echo "Respaldo files  $DIRECTORY/diario/FILES-diario-$DIA.sql.gz ...\n"
 
 tar -czf $DIRECTORY/diario/FILESdiario-$DIA.tar.gz  $FILES/$CONTEXTO
 
+if [ "$S3" = "y" ]; then
+	echo "Respaldo S3"
+	s3cmd put $DIRECTORY/diario/DB-diario-$DIA.sql.gz  s3://$SPACENAME/$SPACEPATH/
+	s3cmd put $DIRECTORY/diario/FILESdiario-$DIA.tar.gz  s3://$SPACENAME/$SPACEPATH/
+fi
 
