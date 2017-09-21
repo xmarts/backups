@@ -41,7 +41,7 @@ Ejecutar
 
 ```sh
 respaldoDiario.sh BASEDEDATOS 
-con respaldo local 
+#con respaldo local 
 respaldoDiario.sh BASEDEDATOS  local
 ```
 
