@@ -32,6 +32,8 @@ s3cmd --configure
 ```
 
 Ahora solo configurar odooresconf.sh
+```sh
 export S3=y     y para habilitar n para descartar
 export SPACENAME=xmarts  nombre del espacio de trabajo
 export SPACEPATH=carpeta   nombre de la carpeta donde estara el espacio de trabajo 
+```
