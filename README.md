@@ -1,7 +1,8 @@
 ## DESCARGAR 
 
 ```sh
-mkdir -p /usr/local/src/backups
+cd /usr/local/src/
+git clone https://github.com/xmarts/backups.git
 ```
 
 ## LINK
